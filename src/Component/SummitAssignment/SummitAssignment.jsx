@@ -57,7 +57,7 @@ const AttachMent= (props)=> {
                 <GoogleDocsViewer
                     width="600px"
                     height="780px"
-                    fileUrl={"https://res.cloudinary.com/cockbook/raw/upload/v1668550793/single/Unit_18_w0ef7n.docx"}
+                    fileUrl={props.uri}
                     />
             </div>
         )
