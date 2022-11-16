@@ -102,10 +102,10 @@ const OptionAuthor= (props)=> {
 const OptionMember= (props)=> {
     return (
         <div className={"jsdjakjskajeawwaaww"} style={{padding: 10, borderRadius: 8, position: "absolute", right: 0, top: 0, marginTop: 40, width: "max-content", background: "#fff", boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px'}}>
-            <div className={"djasjkjkjekwawwaaw fmdkaskajskassaas"} style={{height: 48, cursor: "pointer", display: "flex", alignItems: "center", padding: 5}}>Copy link invite</div>
             <CopyToClipboard text={window.location.origin+"/j/" +props.linkJoin}>
-                <div className={"djasjkjkjekwawwaaw fmdkaskajskassaas"} style={{height: 48, cursor: "pointer", display: "flex", alignItems: "center", padding: 5}}>Out class</div>
+                <div className={"djasjkjkjekwawwaaw fmdkaskajskassaas"} style={{height: 48, cursor: "pointer", display: "flex", alignItems: "center", padding: 5}}>Copy link invite</div>
             </CopyToClipboard>
+            <div className={"djasjkjkjekwawwaaw fmdkaskajskassaas"} style={{height: 48, cursor: "pointer", display: "flex", alignItems: "center", padding: 5}}>Out class</div>
         </div>
     )
 }

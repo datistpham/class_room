@@ -155,7 +155,7 @@ const ListAssignMent= (props)=> {
                 props?.data?.length <= 0 && <div style={{textAlign: "center"}}>Nothing was delivered</div>
             }
             {
-                props?.data?.length > 0 && props?.data?.map((item, key)=> <ItemAssignMent setData={props.setData} data={props.data} {...item} key={item._id} />)
+                props?.data?.length > 0 && props?.data?.map((item, key)=> <ItemAssignMent key={key} setData={props.setData} data={props.data} {...item} />)
             }
         </div>
     )
@@ -179,14 +179,15 @@ const ItemAssignMent= (props)=> {
     }
 
     return (
-        <Link to={`/c/${classId}/a/${props.idAssignment}`} style={{textDecoration: "none", color: "unset"}}>
         <>
             <div className={"djklasjaksjkasjaaaw"} style={{width: "100%", padding: "10px", border: "1px solid #e7e7e7", borderRadius: 5, display: "flex", justifyContent: 'space-between', alignItems: "center"}}>
                 <div>
                     {
-                        <div className={"asjkasjkajdskas"} style={{fontWeight: 600, marginBottom: 12}}>
-                            {props.authorName} post a new assignment: {props.description}
-                        </div>
+                        <Link to={`/c/${classId}/a/${props.idAssignment}`} style={{textDecoration: "none", color: "unset"}}>
+                            <div className={"asjkasjkajdskas"} style={{fontWeight: 600, marginBottom: 12}}>
+                                {props.authorName} post a new assignment: {props.description}
+                            </div>
+                        </Link>
                     }
                     {
                         <div>
@@ -202,7 +203,6 @@ const ItemAssignMent= (props)=> {
             </div>
             <br />
         </>
-        </Link>
     )
 }
 
